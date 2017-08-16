@@ -21,6 +21,7 @@ class Mode(Enum):
 
 API_STAR_SETTINGS = {
     'SECRET_KEY': '^7s7s8721%S%&gggd121%^&^&^*&Ysfgsfg1212312323213',
+    'HASHING_ALG': 'HS256',
     'DATABASE': {
         'URL': 'postgresql://signs_admin:homm1994@localhost:5432/signs',
         'METADATA': Base.metadata

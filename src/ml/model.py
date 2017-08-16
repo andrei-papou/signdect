@@ -1,12 +1,13 @@
 from typing import Iterable
+
 import numpy as np
 import tensorflow as tf
-from models.standard import standard, standard_deep, standard_simplified
-from models.sign_specific import sign_specific
-from utils import generate_model_id, get_model_file_path, get_mode_prefix
-from data import DataProvider
-from settings import Mode
+from .data import DataProvider
+from .models.sign_specific import sign_specific
+
 from exceptions import EarlyStoppingException
+from ml.utils import generate_model_id, get_model_file_path, get_mode_prefix
+from settings import Mode
 
 
 class Model:

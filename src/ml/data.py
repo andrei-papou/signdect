@@ -1,12 +1,14 @@
-import os
 import csv
+import os
 import pickle
 from typing import Iterable, Tuple, List
+
 import numpy as np
 from scipy.misc import imread, imresize
-from utils import unison_shuffle_lists
-from settings import IMG_SLICE, DATA_DIRECTORY, Mode
+
 from exceptions import InvalidModeException
+from ml.utils import unison_shuffle_lists
+from settings import IMG_SLICE, DATA_DIRECTORY, Mode
 
 
 def pad_img(img: np.array) -> np.array:

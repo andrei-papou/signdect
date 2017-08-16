@@ -1,4 +1,5 @@
 from enum import Enum
+from web.database import Base
 
 
 WIDTH = 64
@@ -18,10 +19,18 @@ class Mode(Enum):
     TEST = 2
 
 
-DATABASE_CONF = {
-    'database': 'signs',
-    'user': 'signs_admin',
-    'password': 'homm1994',
-    'host': 'localhost',
-    'port': '5432'
+API_STAR_SETTINGS = {
+    'SECRET_KEY': '^7s7s8721%S%&gggd121%^&^&^*&Ysfgsfg1212312323213',
+    'DATABASE': {
+        'URL': 'postgresql://signs_admin:homm1994@localhost:5432/signs',
+        'METADATA': Base.metadata
+    },
+    'MODEL_PARAMS': {
+        'width': WIDTH,
+        'height': HEIGHT,
+        'channels': CHANNELS,
+        'categories': CATEGORIES,
+        'saved_model': BEST_MODEL_ID
+    }
 }
+

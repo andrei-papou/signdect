@@ -1,11 +1,12 @@
-import sys
 import argparse
+import sys
+
 import numpy as np
 import tensorflow as tf
-from model import Model
-from data import DataProvider, InMemoryDataProvider
-from settings import WIDTH, HEIGHT, CHANNELS, CATEGORIES
+from .data import DataProvider
 
+from ml.model import Model
+from settings import WIDTH, HEIGHT, CHANNELS, CATEGORIES
 
 tf.logging.set_verbosity(tf.logging.INFO)
 

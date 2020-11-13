@@ -25,7 +25,7 @@ scikit-learn==0.18.2
 scipy==0.19.1
 six==1.10.0
 sklearn==0.0
-tensorflow-gpu==1.2.1
+tensorflow-gpu==2.3.1
 uritemplate==3.0.0
 urllib3==1.22
 Werkzeug==0.12.2
